@@ -1,0 +1,109 @@
+:root {
+    --bg : #fdf0fd;
+    --panel: hsl(304, 74%, 92%);
+    --panelSolid: #034144;
+    --text: #333333;
+    --muted: #777777;
+    --accent: #007BFF;
+    --accent2: #0056b3;
+    --shadow: 0 16px 50px rgba(0, 0, 0, 0.1);
+    --radius: 15px;
+}
+
+* {box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Profiles */
+.profiles-page {
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos toda la altura de la pantalla */
+    background-color: 
+    radial-gradient(900px 500px at 20% 10%, var(--panelSolid), transparent 60%);  
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.profiles-header {
+    padding: 28px 32px;
+    margin-bottom: 40px;
+}
+
+.profiles-header .Juampis-container {
+    font-weight: 700px;
+    letter-spacing: .2em;
+    font-size: 1.5rem;
+    background-color: var(--panel);
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.profiles-main {
+    flex: 1; /* Permite que el main ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.profiles-title {
+    font-size: clamp(26px, 4vw, 44px); /* Tamaño de fuente adaptable */
+    margin-bottom: 0px 0px 32px;
+    font-weight: 700;
+}
+
+.profiles-grid {
+    display: flex;
+    gap: 34;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profiles-card {
+    width: 100;
+    background-color: transparent;
+    border: 0;
+    color: var(--text);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: transform .3s ease;
+}
+
+.profiles-card img {
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 3px solid var(--accent2);
+    box-shadow: 0 0 0 var(--panelSolid);
+    transition: transform .3 ease, box-shadow .3 ease, border-color .3 ease;
+}
+
+.profiles-card span {
+    opacity: .92;
+    letter-spacing: .2px;
+    font-size: 18px;
+}
+
+.profiles-card:hover {
+    transform: translateY(-4px)
+}
+
+.profiles-card:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #777777;
+    border-color: aliceblue;
+}
