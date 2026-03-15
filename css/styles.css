@@ -48,6 +48,14 @@ body {
     box-shadow: var(--shadow);
 }
 
+.logo {
+    background-color: transparent;
+    height: 0;
+    min-height: 38px;
+    min-width: 68px;
+    width: auto;
+}
+
 .profiles-main {
     flex: 1; /* Permite que el main ocupe el espacio restante */
     display: flex;
@@ -119,24 +127,8 @@ body {
     font-size: 14px;
 }
 
-.desktop{
-    display: block;
-}
-
-.mobile{
-    display: none;
-}
-
 @media (max-width: 48px) {
     .profiles-main{
         margin-top: 0px;
-    }
-
-    .desktop{
-        display: none;
-    }
-
-    .mobile{
-        display: block;
     }
 }
