@@ -132,3 +132,18 @@ body {
         margin-top: 0px;
     }
 }
+
+.fondo-multiple {
+  background-image: 
+    url("../img/profile/home1.webp"),
+    url("../img/profile/home2.webp"), 
+    url("../img/profile/home3.webp");
+  
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, contain, contain;
+  background-position: center, center, center;
+  height: 100vh;
+  min-height: 50px;
+  min-width: 86px;
+  width: auto;
+}   
